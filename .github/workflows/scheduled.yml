@@ -3,7 +3,7 @@ name: schedule
 
 on:
   schedule:
-    # the 21st and 47th minute of every business hour (14-22 UTC, 9-17 EST) every day of the montch except the 15th and 31st, not on weekends
+    # the 21st and 47th minute of every business hour (14-22 UTC, 9-17 EST) on weekdays
     - cron:  '21,47 14-22 * * 1-5'
 
 jobs:
