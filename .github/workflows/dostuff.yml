@@ -1,4 +1,4 @@
-name: CI
+name: doing things
 
 on:
   push  
