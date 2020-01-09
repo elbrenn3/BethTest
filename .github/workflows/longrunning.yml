@@ -1,4 +1,4 @@
-name: Ping
+name: Ping!
 
 on: [push]
 
