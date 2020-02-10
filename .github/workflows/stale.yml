@@ -1,7 +1,7 @@
 name: "Close stale issues"
 on:
   schedule:
-  # 21:15 UTC (15EST) on the 2nd-29th of the month
+  # 21:15 UTC (4:15 PM EST) on the 2nd-29th of the month
   - cron: "15 21 2-29 * *"
 
 jobs:
