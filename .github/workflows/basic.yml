@@ -1,7 +1,9 @@
 name: CI
 
 on:
-  push  
+  push:
+    paths:
+    - 'docs/**'
 
 jobs:
   build:
