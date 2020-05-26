@@ -22,6 +22,6 @@ jobs:
           
     - name: fail
       run: |
-       echo "Game over!",
+       echo sad,
        exit 1
         
