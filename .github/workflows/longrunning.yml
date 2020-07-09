@@ -5,7 +5,7 @@ on: [push]
 jobs:
   build:
 
-    runs-on: [abc]
+    runs-on: [abc,def]
     
     steps:
     - uses: actions/checkout@v1
