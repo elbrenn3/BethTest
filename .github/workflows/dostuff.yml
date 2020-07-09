@@ -1,8 +1,5 @@
 name: doing things
 
-on:
-  push  
-
 jobs:
   artifact:
     runs-on: ubuntu-latest
