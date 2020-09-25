@@ -1,11 +1,20 @@
-steps:
-- uses: actions/checkout@v2
+on: push
+jobs:
+  artifacts:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
 
-- run: mkdir -p path/to/artifact
+    - run: mkdir -p path/to/artifact
 
-- run: echo hello > path/to/artifact/world.txt
+    - run: echo hello > path/to/artifact/world.txt
 
-- uses: actions/upload-artifact@v2
-  with:
-    name: my-artifact
-    path: path/to/artifact/world.txt
+    - uses: actions/upload-artifact@v2
+      with:
+        name: artifact
+        path: path/to/artifact/notcustom.txt
+        
+    - uses: acton/upload-artifact@v2
+      with:
+        name: custom retention artifact
+        path: path/to/artifact/custom.txt
