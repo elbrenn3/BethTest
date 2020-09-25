@@ -12,12 +12,12 @@ jobs:
       
     - run: echo world > path/to/artifact/custom.txt
 
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@master
       with:
         name: artifact
         path: path/to/artifact/notcustom.txt
         
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@master
       with:
         name: custom retention artifact
         path: path/to/artifact/custom.txt
