@@ -1,4 +1,4 @@
-name: a.yml
+name: upload artifacts
 on: push
 jobs:
   upload-artifacts:
