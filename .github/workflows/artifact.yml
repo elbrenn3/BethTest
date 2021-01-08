@@ -1,4 +1,4 @@
-name: Artifact Test
+name: a.yml
 on: push
 jobs:
   upload-artifacts:
