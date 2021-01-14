@@ -1,4 +1,4 @@
-name: upload artifacts
+name: upload artifacts 2
 on: push
 jobs:
   upload-artifacts:
