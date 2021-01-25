@@ -1,5 +1,7 @@
 name: ci
 on: push
+  tags:
+    - v1.* 
 jobs:
   upload-artifacts:
     runs-on: ubuntu-latest
