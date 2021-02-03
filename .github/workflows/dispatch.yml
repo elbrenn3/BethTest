@@ -1,14 +1,17 @@
   
-name: ci
-
-on:  [pull_request, workflow_dispatch]
-
+name: 🦖
+on: [push, workflow_dispatch]
 jobs:
-  build:
+  upload-artifacts:
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v1
-    
-    - name: Run a one-line script
-      run: echo important business stuff!
+      - uses: actions/upload-artifact@v2
+        with:
+          name: normal-artifact
+          path: my-artifact.txt
+      - uses: actions/upload-artifact@v2
+        with:
+          name: custom-artifact
+          path: my-artifact.txt
+          retention-days: 7
+
