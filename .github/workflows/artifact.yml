@@ -1,4 +1,4 @@
-name: publish-artifact
+name: publish
 on: push
 jobs:
   my_first_job:
