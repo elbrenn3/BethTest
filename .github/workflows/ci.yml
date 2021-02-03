@@ -1,8 +1,5 @@
 name: 🦖
-on: 
-  push:
-    tags:
-      - v1.* 
+on: push
 jobs:
   upload-artifacts:
     runs-on: ubuntu-latest
