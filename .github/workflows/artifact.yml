@@ -1,2 +1,11 @@
 name: publish-artifact
 on: push
+jobs:
+  my_first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: My first action
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FIRST_NAME: Mona
+          LAST_NAME: Octocat
