@@ -6,6 +6,5 @@ jobs:
     steps:
       - name: My first action
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FIRST_NAME: Mona
           LAST_NAME: Octocat
