@@ -9,4 +9,4 @@ jobs:
         with:
           first_name: Mona
           middle_name: The
-          last_name: Octocat :
+          last_name: Octocat
