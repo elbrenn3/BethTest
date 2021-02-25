@@ -1,4 +1,4 @@
-name: "Close stale issues"
+name: "❤️"
 on:
   schedule:
   # 21:15 UTC (4:15 PM EST) on the 2nd-29th of the month
