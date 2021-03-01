@@ -1,0 +1,17 @@
+  
+name: cron
+
+on:
+  schedule:
+    # the 21st and 47th minute of every business hour (14-22 UTC, 9-17 EST) on weekdays
+    - cron:  '17 14-22 * * 1-5'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    
+    - name: Run a one-line script
+      run: echo important business stuff!
