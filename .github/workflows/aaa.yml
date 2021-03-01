@@ -1,0 +1,12 @@
+name: aaa
+on: workflow-dispatch
+jobs:
+  my_first_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: My first step
+        uses: actions/hello_world@main
+        with:
+          first_name: Mona
+          middle_name: The
+          last_name: Octocat
