@@ -1,6 +1,6 @@
 name: "1"
 on:
-  workflow_dispatch: hi
+  push: []
 jobs:
   important:
     runs-on: ubuntu-latest
