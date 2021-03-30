@@ -1,5 +1,6 @@
 name: "1"
-on: workflow_dispatch
+on:
+  workflow_dispatch: blah
 jobs:
   important:
     runs-on: ubuntu-latest
