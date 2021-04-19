@@ -1,33 +1,8 @@
 name: "1"
 on:
-  workflow_dispatch
+  workflow_dispatch:
 jobs:
   important:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run a one-line script
-        run: echo Hello, world!
-  important2:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run a one-line script
-        run: echo Hello, world!
-  important3:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run a one-line script
-        run: echo Hello, world!
-  important4:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run a one-line script
-        run: echo Hello, world!
-important5:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Run a one-line script
-        run: echo Hello, world!
-  important6:
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
