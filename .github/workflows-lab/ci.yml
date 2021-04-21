@@ -4,6 +4,7 @@ on:
   pull_request:
 jobs:
   important:
+    environment: staging_environment
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
