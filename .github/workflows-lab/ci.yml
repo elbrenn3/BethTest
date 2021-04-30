@@ -4,7 +4,13 @@ on:
   pull_request:
     types: [assigned, opened, synchronize, reopened, closed]
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: echo Hello, world!
   important:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
