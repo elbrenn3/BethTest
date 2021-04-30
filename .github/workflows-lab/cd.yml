@@ -1,7 +1,8 @@
 name: "2"
 on:
   workflow_dispatch:
-  deployment_status:
+  push:
+  pull_request:
 jobs:
   cd:
     environment: staging
