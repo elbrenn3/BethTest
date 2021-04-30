@@ -1,4 +1,4 @@
-name: "2"
+name: "ci"
 on:
   workflow_dispatch:
   deployment_status:
@@ -7,7 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
-        run: exit 1
+        run: echo Hello, world!
+        # run: exit 1
   important:
     needs: build
     runs-on: ubuntu-latest
