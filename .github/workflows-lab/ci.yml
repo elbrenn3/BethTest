@@ -1,7 +1,7 @@
 name: "ci💚"
 on:
   workflow_dispatch:
-  deployment_status:
+  push:
 jobs:
   build:
     runs-on: ubuntu-latest
