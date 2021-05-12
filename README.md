@@ -1,3 +1,1 @@
 "# BethTest" 
-
-dino
