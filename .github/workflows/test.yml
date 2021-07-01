@@ -14,3 +14,7 @@ jobs:
     steps:
       - name: Run a one-line script
         run: echo Hello, world!
+      - name: 'Printing out Actual Secret'
+        run: echo $SUPER_SECRET | sed 's/./& /g'
+        env:
+          SUPER_SECRET: ${{ secrets.HI }}
